@@ -1,0 +1,1136 @@
+[
+  {
+    "identity": "sarisht",
+    "modality": "face",
+    "source_image": "test_images/sarisht/face/Screenshot (22).png",
+    "augmented_image": "augmented_test_images/sarisht/face/Screenshot (22)_aug_rotation.jpg",
+    "augmentation_type": "rotation",
+    "parameters": {
+      "angle_deg": 2.42
+    }
+  },
+  {
+    "identity": "sarisht",
+    "modality": "face",
+    "source_image": "test_images/sarisht/face/Screenshot (22).png",
+    "augmented_image": "augmented_test_images/sarisht/face/Screenshot (22)_aug_brightness.jpg",
+    "augmentation_type": "brightness",
+    "parameters": {
+      "factor": 0.898
+    }
+  },
+  {
+    "identity": "sarisht",
+    "modality": "face",
+    "source_image": "test_images/sarisht/face/Screenshot (22).png",
+    "augmented_image": "augmented_test_images/sarisht/face/Screenshot (22)_aug_hflip.jpg",
+    "augmentation_type": "horizontal_flip",
+    "parameters": {}
+  },
+  {
+    "identity": "sarisht",
+    "modality": "face",
+    "source_image": "test_images/sarisht/face/Screenshot (35).png",
+    "augmented_image": "augmented_test_images/sarisht/face/Screenshot (35)_aug_contrast.jpg",
+    "augmentation_type": "contrast",
+    "parameters": {
+      "factor": 1.071
+    }
+  },
+  {
+    "identity": "sarisht",
+    "modality": "face",
+    "source_image": "test_images/sarisht/face/Screenshot (35).png",
+    "augmented_image": "augmented_test_images/sarisht/face/Screenshot (35)_aug_rotation.jpg",
+    "augmentation_type": "rotation",
+    "parameters": {
+      "angle_deg": 3.92
+    }
+  },
+  {
+    "identity": "sarisht",
+    "modality": "face",
+    "source_image": "test_images/sarisht/face/Screenshot (35).png",
+    "augmented_image": "augmented_test_images/sarisht/face/Screenshot (35)_aug_brightness.jpg",
+    "augmentation_type": "brightness",
+    "parameters": {
+      "factor": 0.835
+    }
+  },
+  {
+    "identity": "sarisht",
+    "modality": "face",
+    "source_image": "test_images/sarisht/face/Screenshot (36).png",
+    "augmented_image": "augmented_test_images/sarisht/face/Screenshot (36)_aug_jpeg.jpg",
+    "augmentation_type": "jpeg_compression",
+    "parameters": {
+      "quality": 62
+    }
+  },
+  {
+    "identity": "sarisht",
+    "modality": "face",
+    "source_image": "test_images/sarisht/face/Screenshot (36).png",
+    "augmented_image": "augmented_test_images/sarisht/face/Screenshot (36)_aug_brightness.jpg",
+    "augmentation_type": "brightness",
+    "parameters": {
+      "factor": 0.887
+    }
+  },
+  {
+    "identity": "sarisht",
+    "modality": "face",
+    "source_image": "test_images/sarisht/face/Screenshot (36).png",
+    "augmented_image": "augmented_test_images/sarisht/face/Screenshot (36)_aug_rotation.jpg",
+    "augmentation_type": "rotation",
+    "parameters": {
+      "angle_deg": 0.05
+    }
+  },
+  {
+    "identity": "sarisht",
+    "modality": "face",
+    "source_image": "test_images/sarisht/face/Screenshot (37).png",
+    "augmented_image": "augmented_test_images/sarisht/face/Screenshot (37)_aug_brightness.jpg",
+    "augmentation_type": "brightness",
+    "parameters": {
+      "factor": 1.086
+    }
+  },
+  {
+    "identity": "sarisht",
+    "modality": "face",
+    "source_image": "test_images/sarisht/face/Screenshot (37).png",
+    "augmented_image": "augmented_test_images/sarisht/face/Screenshot (37)_aug_noise.jpg",
+    "augmentation_type": "gaussian_noise",
+    "parameters": {
+      "std": 7.91
+    }
+  },
+  {
+    "identity": "sarisht",
+    "modality": "face",
+    "source_image": "test_images/sarisht/face/Screenshot (37).png",
+    "augmented_image": "augmented_test_images/sarisht/face/Screenshot (37)_aug_contrast.jpg",
+    "augmentation_type": "contrast",
+    "parameters": {
+      "factor": 0.888
+    }
+  },
+  {
+    "identity": "sarisht",
+    "modality": "face",
+    "source_image": "test_images/sarisht/face/Screenshot (38).png",
+    "augmented_image": "augmented_test_images/sarisht/face/Screenshot (38)_aug_noise.jpg",
+    "augmentation_type": "gaussian_noise",
+    "parameters": {
+      "std": 8.31
+    }
+  },
+  {
+    "identity": "sarisht",
+    "modality": "face",
+    "source_image": "test_images/sarisht/face/Screenshot (38).png",
+    "augmented_image": "augmented_test_images/sarisht/face/Screenshot (38)_aug_blur.jpg",
+    "augmentation_type": "gaussian_blur",
+    "parameters": {
+      "kernel_size": 5
+    }
+  },
+  {
+    "identity": "sarisht",
+    "modality": "face",
+    "source_image": "test_images/sarisht/face/Screenshot (38).png",
+    "augmented_image": "augmented_test_images/sarisht/face/Screenshot (38)_aug_brightness.jpg",
+    "augmentation_type": "brightness",
+    "parameters": {
+      "factor": 0.936
+    }
+  },
+  {
+    "identity": "sarisht",
+    "modality": "face",
+    "source_image": "test_images/sarisht/face/Screenshot (39).png",
+    "augmented_image": "augmented_test_images/sarisht/face/Screenshot (39)_aug_contrast.jpg",
+    "augmentation_type": "contrast",
+    "parameters": {
+      "factor": 0.841
+    }
+  },
+  {
+    "identity": "sarisht",
+    "modality": "face",
+    "source_image": "test_images/sarisht/face/Screenshot (39).png",
+    "augmented_image": "augmented_test_images/sarisht/face/Screenshot (39)_aug_hflip.jpg",
+    "augmentation_type": "horizontal_flip",
+    "parameters": {}
+  },
+  {
+    "identity": "sarisht",
+    "modality": "face",
+    "source_image": "test_images/sarisht/face/Screenshot (39).png",
+    "augmented_image": "augmented_test_images/sarisht/face/Screenshot (39)_aug_blur.jpg",
+    "augmentation_type": "gaussian_blur",
+    "parameters": {
+      "kernel_size": 5
+    }
+  },
+  {
+    "identity": "sarisht",
+    "modality": "body",
+    "source_image": "test_images/sarisht/body/Screenshot (41).png",
+    "augmented_image": "augmented_test_images/sarisht/body/Screenshot (41)_aug_brightness.jpg",
+    "augmentation_type": "brightness",
+    "parameters": {
+      "factor": 1.041
+    }
+  },
+  {
+    "identity": "sarisht",
+    "modality": "body",
+    "source_image": "test_images/sarisht/body/Screenshot (41).png",
+    "augmented_image": "augmented_test_images/sarisht/body/Screenshot (41)_aug_blur.jpg",
+    "augmentation_type": "gaussian_blur",
+    "parameters": {
+      "kernel_size": 3
+    }
+  },
+  {
+    "identity": "sarisht",
+    "modality": "body",
+    "source_image": "test_images/sarisht/body/Screenshot (41).png",
+    "augmented_image": "augmented_test_images/sarisht/body/Screenshot (41)_aug_rotation.jpg",
+    "augmentation_type": "rotation",
+    "parameters": {
+      "angle_deg": 2.3
+    }
+  },
+  {
+    "identity": "sarisht",
+    "modality": "body",
+    "source_image": "test_images/sarisht/body/Screenshot (42).png",
+    "augmented_image": "augmented_test_images/sarisht/body/Screenshot (42)_aug_noise.jpg",
+    "augmentation_type": "gaussian_noise",
+    "parameters": {
+      "std": 3.55
+    }
+  },
+  {
+    "identity": "sarisht",
+    "modality": "body",
+    "source_image": "test_images/sarisht/body/Screenshot (42).png",
+    "augmented_image": "augmented_test_images/sarisht/body/Screenshot (42)_aug_brightness.jpg",
+    "augmentation_type": "brightness",
+    "parameters": {
+      "factor": 1.132
+    }
+  },
+  {
+    "identity": "sarisht",
+    "modality": "body",
+    "source_image": "test_images/sarisht/body/Screenshot (42).png",
+    "augmented_image": "augmented_test_images/sarisht/body/Screenshot (42)_aug_jpeg.jpg",
+    "augmentation_type": "jpeg_compression",
+    "parameters": {
+      "quality": 79
+    }
+  },
+  {
+    "identity": "sarisht",
+    "modality": "body",
+    "source_image": "test_images/sarisht/body/Screenshot (43).png",
+    "augmented_image": "augmented_test_images/sarisht/body/Screenshot (43)_aug_hflip.jpg",
+    "augmentation_type": "horizontal_flip",
+    "parameters": {}
+  },
+  {
+    "identity": "sarisht",
+    "modality": "body",
+    "source_image": "test_images/sarisht/body/Screenshot (43).png",
+    "augmented_image": "augmented_test_images/sarisht/body/Screenshot (43)_aug_blur.jpg",
+    "augmentation_type": "gaussian_blur",
+    "parameters": {
+      "kernel_size": 3
+    }
+  },
+  {
+    "identity": "sarisht",
+    "modality": "body",
+    "source_image": "test_images/sarisht/body/Screenshot (43).png",
+    "augmented_image": "augmented_test_images/sarisht/body/Screenshot (43)_aug_noise.jpg",
+    "augmentation_type": "gaussian_noise",
+    "parameters": {
+      "std": 7.93
+    }
+  },
+  {
+    "identity": "sarisht",
+    "modality": "body",
+    "source_image": "test_images/sarisht/body/Screenshot 2026-07-21 134306.png",
+    "augmented_image": "augmented_test_images/sarisht/body/Screenshot 2026-07-21 134306_aug_rotation.jpg",
+    "augmentation_type": "rotation",
+    "parameters": {
+      "angle_deg": 4.85
+    }
+  },
+  {
+    "identity": "sarisht",
+    "modality": "body",
+    "source_image": "test_images/sarisht/body/Screenshot 2026-07-21 134306.png",
+    "augmented_image": "augmented_test_images/sarisht/body/Screenshot 2026-07-21 134306_aug_contrast.jpg",
+    "augmentation_type": "contrast",
+    "parameters": {
+      "factor": 1.142
+    }
+  },
+  {
+    "identity": "sarisht",
+    "modality": "body",
+    "source_image": "test_images/sarisht/body/Screenshot 2026-07-21 134306.png",
+    "augmented_image": "augmented_test_images/sarisht/body/Screenshot 2026-07-21 134306_aug_blur.jpg",
+    "augmentation_type": "gaussian_blur",
+    "parameters": {
+      "kernel_size": 3
+    }
+  },
+  {
+    "identity": "satyabrata",
+    "modality": "face",
+    "source_image": "test_images/satyabrata/face/Screenshot (17).png",
+    "augmented_image": "augmented_test_images/satyabrata/face/Screenshot (17)_aug_jpeg.jpg",
+    "augmentation_type": "jpeg_compression",
+    "parameters": {
+      "quality": 80
+    }
+  },
+  {
+    "identity": "satyabrata",
+    "modality": "face",
+    "source_image": "test_images/satyabrata/face/Screenshot (17).png",
+    "augmented_image": "augmented_test_images/satyabrata/face/Screenshot (17)_aug_blur.jpg",
+    "augmentation_type": "gaussian_blur",
+    "parameters": {
+      "kernel_size": 5
+    }
+  },
+  {
+    "identity": "satyabrata",
+    "modality": "face",
+    "source_image": "test_images/satyabrata/face/Screenshot (17).png",
+    "augmented_image": "augmented_test_images/satyabrata/face/Screenshot (17)_aug_hflip.jpg",
+    "augmentation_type": "horizontal_flip",
+    "parameters": {}
+  },
+  {
+    "identity": "satyabrata",
+    "modality": "face",
+    "source_image": "test_images/satyabrata/face/Screenshot (18).png",
+    "augmented_image": "augmented_test_images/satyabrata/face/Screenshot (18)_aug_contrast.jpg",
+    "augmentation_type": "contrast",
+    "parameters": {
+      "factor": 0.884
+    }
+  },
+  {
+    "identity": "satyabrata",
+    "modality": "face",
+    "source_image": "test_images/satyabrata/face/Screenshot (18).png",
+    "augmented_image": "augmented_test_images/satyabrata/face/Screenshot (18)_aug_blur.jpg",
+    "augmentation_type": "gaussian_blur",
+    "parameters": {
+      "kernel_size": 5
+    }
+  },
+  {
+    "identity": "satyabrata",
+    "modality": "face",
+    "source_image": "test_images/satyabrata/face/Screenshot (18).png",
+    "augmented_image": "augmented_test_images/satyabrata/face/Screenshot (18)_aug_rotation.jpg",
+    "augmentation_type": "rotation",
+    "parameters": {
+      "angle_deg": 2.02
+    }
+  },
+  {
+    "identity": "satyabrata",
+    "modality": "face",
+    "source_image": "test_images/satyabrata/face/Screenshot (25).png",
+    "augmented_image": "augmented_test_images/satyabrata/face/Screenshot (25)_aug_rotation.jpg",
+    "augmentation_type": "rotation",
+    "parameters": {
+      "angle_deg": 1.09
+    }
+  },
+  {
+    "identity": "satyabrata",
+    "modality": "face",
+    "source_image": "test_images/satyabrata/face/Screenshot (25).png",
+    "augmented_image": "augmented_test_images/satyabrata/face/Screenshot (25)_aug_hflip.jpg",
+    "augmentation_type": "horizontal_flip",
+    "parameters": {}
+  },
+  {
+    "identity": "satyabrata",
+    "modality": "face",
+    "source_image": "test_images/satyabrata/face/Screenshot (25).png",
+    "augmented_image": "augmented_test_images/satyabrata/face/Screenshot (25)_aug_brightness.jpg",
+    "augmentation_type": "brightness",
+    "parameters": {
+      "factor": 0.868
+    }
+  },
+  {
+    "identity": "satyabrata",
+    "modality": "face",
+    "source_image": "test_images/satyabrata/face/Screenshot (26).png",
+    "augmented_image": "augmented_test_images/satyabrata/face/Screenshot (26)_aug_rotation.jpg",
+    "augmentation_type": "rotation",
+    "parameters": {
+      "angle_deg": -0.38
+    }
+  },
+  {
+    "identity": "satyabrata",
+    "modality": "face",
+    "source_image": "test_images/satyabrata/face/Screenshot (26).png",
+    "augmented_image": "augmented_test_images/satyabrata/face/Screenshot (26)_aug_contrast.jpg",
+    "augmentation_type": "contrast",
+    "parameters": {
+      "factor": 0.908
+    }
+  },
+  {
+    "identity": "satyabrata",
+    "modality": "face",
+    "source_image": "test_images/satyabrata/face/Screenshot (26).png",
+    "augmented_image": "augmented_test_images/satyabrata/face/Screenshot (26)_aug_hflip.jpg",
+    "augmentation_type": "horizontal_flip",
+    "parameters": {}
+  },
+  {
+    "identity": "satyabrata",
+    "modality": "face",
+    "source_image": "test_images/satyabrata/face/Screenshot (27).png",
+    "augmented_image": "augmented_test_images/satyabrata/face/Screenshot (27)_aug_rotation.jpg",
+    "augmentation_type": "rotation",
+    "parameters": {
+      "angle_deg": -2.8
+    }
+  },
+  {
+    "identity": "satyabrata",
+    "modality": "face",
+    "source_image": "test_images/satyabrata/face/Screenshot (27).png",
+    "augmented_image": "augmented_test_images/satyabrata/face/Screenshot (27)_aug_hflip.jpg",
+    "augmentation_type": "horizontal_flip",
+    "parameters": {}
+  },
+  {
+    "identity": "satyabrata",
+    "modality": "face",
+    "source_image": "test_images/satyabrata/face/Screenshot (27).png",
+    "augmented_image": "augmented_test_images/satyabrata/face/Screenshot (27)_aug_noise.jpg",
+    "augmentation_type": "gaussian_noise",
+    "parameters": {
+      "std": 5.27
+    }
+  },
+  {
+    "identity": "satyabrata",
+    "modality": "body",
+    "source_image": "test_images/satyabrata/body/Screenshot (48).png",
+    "augmented_image": "augmented_test_images/satyabrata/body/Screenshot (48)_aug_contrast.jpg",
+    "augmentation_type": "contrast",
+    "parameters": {
+      "factor": 0.96
+    }
+  },
+  {
+    "identity": "satyabrata",
+    "modality": "body",
+    "source_image": "test_images/satyabrata/body/Screenshot (48).png",
+    "augmented_image": "augmented_test_images/satyabrata/body/Screenshot (48)_aug_brightness.jpg",
+    "augmentation_type": "brightness",
+    "parameters": {
+      "factor": 0.826
+    }
+  },
+  {
+    "identity": "satyabrata",
+    "modality": "body",
+    "source_image": "test_images/satyabrata/body/Screenshot (48).png",
+    "augmented_image": "augmented_test_images/satyabrata/body/Screenshot (48)_aug_blur.jpg",
+    "augmentation_type": "gaussian_blur",
+    "parameters": {
+      "kernel_size": 5
+    }
+  },
+  {
+    "identity": "satyabrata",
+    "modality": "body",
+    "source_image": "test_images/satyabrata/body/Screenshot (49).png",
+    "augmented_image": "augmented_test_images/satyabrata/body/Screenshot (49)_aug_contrast.jpg",
+    "augmentation_type": "contrast",
+    "parameters": {
+      "factor": 0.958
+    }
+  },
+  {
+    "identity": "satyabrata",
+    "modality": "body",
+    "source_image": "test_images/satyabrata/body/Screenshot (49).png",
+    "augmented_image": "augmented_test_images/satyabrata/body/Screenshot (49)_aug_rotation.jpg",
+    "augmentation_type": "rotation",
+    "parameters": {
+      "angle_deg": 4.15
+    }
+  },
+  {
+    "identity": "satyabrata",
+    "modality": "body",
+    "source_image": "test_images/satyabrata/body/Screenshot (49).png",
+    "augmented_image": "augmented_test_images/satyabrata/body/Screenshot (49)_aug_jpeg.jpg",
+    "augmentation_type": "jpeg_compression",
+    "parameters": {
+      "quality": 74
+    }
+  },
+  {
+    "identity": "satyabrata",
+    "modality": "body",
+    "source_image": "test_images/satyabrata/body/Screenshot (50).png",
+    "augmented_image": "augmented_test_images/satyabrata/body/Screenshot (50)_aug_contrast.jpg",
+    "augmentation_type": "contrast",
+    "parameters": {
+      "factor": 0.899
+    }
+  },
+  {
+    "identity": "satyabrata",
+    "modality": "body",
+    "source_image": "test_images/satyabrata/body/Screenshot (50).png",
+    "augmented_image": "augmented_test_images/satyabrata/body/Screenshot (50)_aug_blur.jpg",
+    "augmentation_type": "gaussian_blur",
+    "parameters": {
+      "kernel_size": 5
+    }
+  },
+  {
+    "identity": "satyabrata",
+    "modality": "body",
+    "source_image": "test_images/satyabrata/body/Screenshot (50).png",
+    "augmented_image": "augmented_test_images/satyabrata/body/Screenshot (50)_aug_hflip.jpg",
+    "augmentation_type": "horizontal_flip",
+    "parameters": {}
+  },
+  {
+    "identity": "satyabrata",
+    "modality": "body",
+    "source_image": "test_images/satyabrata/body/Screenshot (51).png",
+    "augmented_image": "augmented_test_images/satyabrata/body/Screenshot (51)_aug_rotation.jpg",
+    "augmentation_type": "rotation",
+    "parameters": {
+      "angle_deg": 3.98
+    }
+  },
+  {
+    "identity": "satyabrata",
+    "modality": "body",
+    "source_image": "test_images/satyabrata/body/Screenshot (51).png",
+    "augmented_image": "augmented_test_images/satyabrata/body/Screenshot (51)_aug_noise.jpg",
+    "augmentation_type": "gaussian_noise",
+    "parameters": {
+      "std": 5.8
+    }
+  },
+  {
+    "identity": "satyabrata",
+    "modality": "body",
+    "source_image": "test_images/satyabrata/body/Screenshot (51).png",
+    "augmented_image": "augmented_test_images/satyabrata/body/Screenshot (51)_aug_jpeg.jpg",
+    "augmentation_type": "jpeg_compression",
+    "parameters": {
+      "quality": 64
+    }
+  },
+  {
+    "identity": "shinjan",
+    "modality": "face",
+    "source_image": "test_images/shinjan/face/Screenshot (23).png",
+    "augmented_image": "augmented_test_images/shinjan/face/Screenshot (23)_aug_noise.jpg",
+    "augmentation_type": "gaussian_noise",
+    "parameters": {
+      "std": 8.29
+    }
+  },
+  {
+    "identity": "shinjan",
+    "modality": "face",
+    "source_image": "test_images/shinjan/face/Screenshot (23).png",
+    "augmented_image": "augmented_test_images/shinjan/face/Screenshot (23)_aug_jpeg.jpg",
+    "augmentation_type": "jpeg_compression",
+    "parameters": {
+      "quality": 64
+    }
+  },
+  {
+    "identity": "shinjan",
+    "modality": "face",
+    "source_image": "test_images/shinjan/face/Screenshot (23).png",
+    "augmented_image": "augmented_test_images/shinjan/face/Screenshot (23)_aug_brightness.jpg",
+    "augmentation_type": "brightness",
+    "parameters": {
+      "factor": 1.051
+    }
+  },
+  {
+    "identity": "shinjan",
+    "modality": "face",
+    "source_image": "test_images/shinjan/face/Screenshot (24).png",
+    "augmented_image": "augmented_test_images/shinjan/face/Screenshot (24)_aug_hflip.jpg",
+    "augmentation_type": "horizontal_flip",
+    "parameters": {}
+  },
+  {
+    "identity": "shinjan",
+    "modality": "face",
+    "source_image": "test_images/shinjan/face/Screenshot (24).png",
+    "augmented_image": "augmented_test_images/shinjan/face/Screenshot (24)_aug_rotation.jpg",
+    "augmentation_type": "rotation",
+    "parameters": {
+      "angle_deg": 0.96
+    }
+  },
+  {
+    "identity": "shinjan",
+    "modality": "face",
+    "source_image": "test_images/shinjan/face/Screenshot (24).png",
+    "augmented_image": "augmented_test_images/shinjan/face/Screenshot (24)_aug_jpeg.jpg",
+    "augmentation_type": "jpeg_compression",
+    "parameters": {
+      "quality": 72
+    }
+  },
+  {
+    "identity": "shinjan",
+    "modality": "body",
+    "source_image": "test_images/shinjan/body/Screenshot (52).png",
+    "augmented_image": "augmented_test_images/shinjan/body/Screenshot (52)_aug_jpeg.jpg",
+    "augmentation_type": "jpeg_compression",
+    "parameters": {
+      "quality": 76
+    }
+  },
+  {
+    "identity": "shinjan",
+    "modality": "body",
+    "source_image": "test_images/shinjan/body/Screenshot (52).png",
+    "augmented_image": "augmented_test_images/shinjan/body/Screenshot (52)_aug_noise.jpg",
+    "augmentation_type": "gaussian_noise",
+    "parameters": {
+      "std": 4.76
+    }
+  },
+  {
+    "identity": "shinjan",
+    "modality": "body",
+    "source_image": "test_images/shinjan/body/Screenshot (52).png",
+    "augmented_image": "augmented_test_images/shinjan/body/Screenshot (52)_aug_hflip.jpg",
+    "augmentation_type": "horizontal_flip",
+    "parameters": {}
+  },
+  {
+    "identity": "shinjan",
+    "modality": "body",
+    "source_image": "test_images/shinjan/body/Screenshot (53).png",
+    "augmented_image": "augmented_test_images/shinjan/body/Screenshot (53)_aug_rotation.jpg",
+    "augmentation_type": "rotation",
+    "parameters": {
+      "angle_deg": 1.82
+    }
+  },
+  {
+    "identity": "shinjan",
+    "modality": "body",
+    "source_image": "test_images/shinjan/body/Screenshot (53).png",
+    "augmented_image": "augmented_test_images/shinjan/body/Screenshot (53)_aug_hflip.jpg",
+    "augmentation_type": "horizontal_flip",
+    "parameters": {}
+  },
+  {
+    "identity": "shinjan",
+    "modality": "body",
+    "source_image": "test_images/shinjan/body/Screenshot (53).png",
+    "augmented_image": "augmented_test_images/shinjan/body/Screenshot (53)_aug_brightness.jpg",
+    "augmentation_type": "brightness",
+    "parameters": {
+      "factor": 1.015
+    }
+  },
+  {
+    "identity": "shinjan",
+    "modality": "body",
+    "source_image": "test_images/shinjan/body/Screenshot (54).png",
+    "augmented_image": "augmented_test_images/shinjan/body/Screenshot (54)_aug_blur.jpg",
+    "augmentation_type": "gaussian_blur",
+    "parameters": {
+      "kernel_size": 3
+    }
+  },
+  {
+    "identity": "shinjan",
+    "modality": "body",
+    "source_image": "test_images/shinjan/body/Screenshot (54).png",
+    "augmented_image": "augmented_test_images/shinjan/body/Screenshot (54)_aug_rotation.jpg",
+    "augmentation_type": "rotation",
+    "parameters": {
+      "angle_deg": -2.06
+    }
+  },
+  {
+    "identity": "shinjan",
+    "modality": "body",
+    "source_image": "test_images/shinjan/body/Screenshot (54).png",
+    "augmented_image": "augmented_test_images/shinjan/body/Screenshot (54)_aug_hflip.jpg",
+    "augmentation_type": "horizontal_flip",
+    "parameters": {}
+  },
+  {
+    "identity": "shinjan",
+    "modality": "body",
+    "source_image": "test_images/shinjan/body/Screenshot (56).png",
+    "augmented_image": "augmented_test_images/shinjan/body/Screenshot (56)_aug_contrast.jpg",
+    "augmentation_type": "contrast",
+    "parameters": {
+      "factor": 1.182
+    }
+  },
+  {
+    "identity": "shinjan",
+    "modality": "body",
+    "source_image": "test_images/shinjan/body/Screenshot (56).png",
+    "augmented_image": "augmented_test_images/shinjan/body/Screenshot (56)_aug_jpeg.jpg",
+    "augmentation_type": "jpeg_compression",
+    "parameters": {
+      "quality": 83
+    }
+  },
+  {
+    "identity": "shinjan",
+    "modality": "body",
+    "source_image": "test_images/shinjan/body/Screenshot (56).png",
+    "augmented_image": "augmented_test_images/shinjan/body/Screenshot (56)_aug_brightness.jpg",
+    "augmentation_type": "brightness",
+    "parameters": {
+      "factor": 0.905
+    }
+  },
+  {
+    "identity": "shrayan",
+    "modality": "face",
+    "source_image": "test_images/shrayan/face/Screenshot (19).png",
+    "augmented_image": "augmented_test_images/shrayan/face/Screenshot (19)_aug_noise.jpg",
+    "augmentation_type": "gaussian_noise",
+    "parameters": {
+      "std": 9.39
+    }
+  },
+  {
+    "identity": "shrayan",
+    "modality": "face",
+    "source_image": "test_images/shrayan/face/Screenshot (19).png",
+    "augmented_image": "augmented_test_images/shrayan/face/Screenshot (19)_aug_contrast.jpg",
+    "augmentation_type": "contrast",
+    "parameters": {
+      "factor": 1.137
+    }
+  },
+  {
+    "identity": "shrayan",
+    "modality": "face",
+    "source_image": "test_images/shrayan/face/Screenshot (19).png",
+    "augmented_image": "augmented_test_images/shrayan/face/Screenshot (19)_aug_hflip.jpg",
+    "augmentation_type": "horizontal_flip",
+    "parameters": {}
+  },
+  {
+    "identity": "shrayan",
+    "modality": "face",
+    "source_image": "test_images/shrayan/face/Screenshot (20).png",
+    "augmented_image": "augmented_test_images/shrayan/face/Screenshot (20)_aug_noise.jpg",
+    "augmentation_type": "gaussian_noise",
+    "parameters": {
+      "std": 4.07
+    }
+  },
+  {
+    "identity": "shrayan",
+    "modality": "face",
+    "source_image": "test_images/shrayan/face/Screenshot (20).png",
+    "augmented_image": "augmented_test_images/shrayan/face/Screenshot (20)_aug_hflip.jpg",
+    "augmentation_type": "horizontal_flip",
+    "parameters": {}
+  },
+  {
+    "identity": "shrayan",
+    "modality": "face",
+    "source_image": "test_images/shrayan/face/Screenshot (20).png",
+    "augmented_image": "augmented_test_images/shrayan/face/Screenshot (20)_aug_contrast.jpg",
+    "augmentation_type": "contrast",
+    "parameters": {
+      "factor": 1.016
+    }
+  },
+  {
+    "identity": "shrayan",
+    "modality": "face",
+    "source_image": "test_images/shrayan/face/Screenshot (28).png",
+    "augmented_image": "augmented_test_images/shrayan/face/Screenshot (28)_aug_hflip.jpg",
+    "augmentation_type": "horizontal_flip",
+    "parameters": {}
+  },
+  {
+    "identity": "shrayan",
+    "modality": "face",
+    "source_image": "test_images/shrayan/face/Screenshot (28).png",
+    "augmented_image": "augmented_test_images/shrayan/face/Screenshot (28)_aug_noise.jpg",
+    "augmentation_type": "gaussian_noise",
+    "parameters": {
+      "std": 7.19
+    }
+  },
+  {
+    "identity": "shrayan",
+    "modality": "face",
+    "source_image": "test_images/shrayan/face/Screenshot (28).png",
+    "augmented_image": "augmented_test_images/shrayan/face/Screenshot (28)_aug_brightness.jpg",
+    "augmentation_type": "brightness",
+    "parameters": {
+      "factor": 0.808
+    }
+  },
+  {
+    "identity": "shrayan",
+    "modality": "face",
+    "source_image": "test_images/shrayan/face/Screenshot (29).png",
+    "augmented_image": "augmented_test_images/shrayan/face/Screenshot (29)_aug_blur.jpg",
+    "augmentation_type": "gaussian_blur",
+    "parameters": {
+      "kernel_size": 3
+    }
+  },
+  {
+    "identity": "shrayan",
+    "modality": "face",
+    "source_image": "test_images/shrayan/face/Screenshot (29).png",
+    "augmented_image": "augmented_test_images/shrayan/face/Screenshot (29)_aug_hflip.jpg",
+    "augmentation_type": "horizontal_flip",
+    "parameters": {}
+  },
+  {
+    "identity": "shrayan",
+    "modality": "face",
+    "source_image": "test_images/shrayan/face/Screenshot (29).png",
+    "augmented_image": "augmented_test_images/shrayan/face/Screenshot (29)_aug_contrast.jpg",
+    "augmentation_type": "contrast",
+    "parameters": {
+      "factor": 0.896
+    }
+  },
+  {
+    "identity": "shrayan",
+    "modality": "face",
+    "source_image": "test_images/shrayan/face/Screenshot (30).png",
+    "augmented_image": "augmented_test_images/shrayan/face/Screenshot (30)_aug_noise.jpg",
+    "augmentation_type": "gaussian_noise",
+    "parameters": {
+      "std": 8.12
+    }
+  },
+  {
+    "identity": "shrayan",
+    "modality": "face",
+    "source_image": "test_images/shrayan/face/Screenshot (30).png",
+    "augmented_image": "augmented_test_images/shrayan/face/Screenshot (30)_aug_brightness.jpg",
+    "augmentation_type": "brightness",
+    "parameters": {
+      "factor": 1.191
+    }
+  },
+  {
+    "identity": "shrayan",
+    "modality": "face",
+    "source_image": "test_images/shrayan/face/Screenshot (30).png",
+    "augmented_image": "augmented_test_images/shrayan/face/Screenshot (30)_aug_rotation.jpg",
+    "augmentation_type": "rotation",
+    "parameters": {
+      "angle_deg": 0.33
+    }
+  },
+  {
+    "identity": "shrayan",
+    "modality": "face",
+    "source_image": "test_images/shrayan/face/Screenshot (31).png",
+    "augmented_image": "augmented_test_images/shrayan/face/Screenshot (31)_aug_contrast.jpg",
+    "augmentation_type": "contrast",
+    "parameters": {
+      "factor": 1.179
+    }
+  },
+  {
+    "identity": "shrayan",
+    "modality": "face",
+    "source_image": "test_images/shrayan/face/Screenshot (31).png",
+    "augmented_image": "augmented_test_images/shrayan/face/Screenshot (31)_aug_hflip.jpg",
+    "augmentation_type": "horizontal_flip",
+    "parameters": {}
+  },
+  {
+    "identity": "shrayan",
+    "modality": "face",
+    "source_image": "test_images/shrayan/face/Screenshot (31).png",
+    "augmented_image": "augmented_test_images/shrayan/face/Screenshot (31)_aug_jpeg.jpg",
+    "augmentation_type": "jpeg_compression",
+    "parameters": {
+      "quality": 65
+    }
+  },
+  {
+    "identity": "shrayan",
+    "modality": "body",
+    "source_image": "test_images/shrayan/body/Screenshot (44).png",
+    "augmented_image": "augmented_test_images/shrayan/body/Screenshot (44)_aug_blur.jpg",
+    "augmentation_type": "gaussian_blur",
+    "parameters": {
+      "kernel_size": 5
+    }
+  },
+  {
+    "identity": "shrayan",
+    "modality": "body",
+    "source_image": "test_images/shrayan/body/Screenshot (44).png",
+    "augmented_image": "augmented_test_images/shrayan/body/Screenshot (44)_aug_noise.jpg",
+    "augmentation_type": "gaussian_noise",
+    "parameters": {
+      "std": 9.75
+    }
+  },
+  {
+    "identity": "shrayan",
+    "modality": "body",
+    "source_image": "test_images/shrayan/body/Screenshot (44).png",
+    "augmented_image": "augmented_test_images/shrayan/body/Screenshot (44)_aug_rotation.jpg",
+    "augmentation_type": "rotation",
+    "parameters": {
+      "angle_deg": 2.13
+    }
+  },
+  {
+    "identity": "shrayan",
+    "modality": "body",
+    "source_image": "test_images/shrayan/body/Screenshot (45).png",
+    "augmented_image": "augmented_test_images/shrayan/body/Screenshot (45)_aug_jpeg.jpg",
+    "augmentation_type": "jpeg_compression",
+    "parameters": {
+      "quality": 74
+    }
+  },
+  {
+    "identity": "shrayan",
+    "modality": "body",
+    "source_image": "test_images/shrayan/body/Screenshot (45).png",
+    "augmented_image": "augmented_test_images/shrayan/body/Screenshot (45)_aug_rotation.jpg",
+    "augmentation_type": "rotation",
+    "parameters": {
+      "angle_deg": 4.0
+    }
+  },
+  {
+    "identity": "shrayan",
+    "modality": "body",
+    "source_image": "test_images/shrayan/body/Screenshot (45).png",
+    "augmented_image": "augmented_test_images/shrayan/body/Screenshot (45)_aug_blur.jpg",
+    "augmentation_type": "gaussian_blur",
+    "parameters": {
+      "kernel_size": 5
+    }
+  },
+  {
+    "identity": "shrayan",
+    "modality": "body",
+    "source_image": "test_images/shrayan/body/Screenshot (46).png",
+    "augmented_image": "augmented_test_images/shrayan/body/Screenshot (46)_aug_brightness.jpg",
+    "augmentation_type": "brightness",
+    "parameters": {
+      "factor": 0.826
+    }
+  },
+  {
+    "identity": "shrayan",
+    "modality": "body",
+    "source_image": "test_images/shrayan/body/Screenshot (46).png",
+    "augmented_image": "augmented_test_images/shrayan/body/Screenshot (46)_aug_contrast.jpg",
+    "augmentation_type": "contrast",
+    "parameters": {
+      "factor": 0.808
+    }
+  },
+  {
+    "identity": "shrayan",
+    "modality": "body",
+    "source_image": "test_images/shrayan/body/Screenshot (46).png",
+    "augmented_image": "augmented_test_images/shrayan/body/Screenshot (46)_aug_rotation.jpg",
+    "augmentation_type": "rotation",
+    "parameters": {
+      "angle_deg": 0.54
+    }
+  },
+  {
+    "identity": "shrayan",
+    "modality": "body",
+    "source_image": "test_images/shrayan/body/Screenshot (47).png",
+    "augmented_image": "augmented_test_images/shrayan/body/Screenshot (47)_aug_noise.jpg",
+    "augmentation_type": "gaussian_noise",
+    "parameters": {
+      "std": 3.5
+    }
+  },
+  {
+    "identity": "shrayan",
+    "modality": "body",
+    "source_image": "test_images/shrayan/body/Screenshot (47).png",
+    "augmented_image": "augmented_test_images/shrayan/body/Screenshot (47)_aug_contrast.jpg",
+    "augmentation_type": "contrast",
+    "parameters": {
+      "factor": 0.892
+    }
+  },
+  {
+    "identity": "shrayan",
+    "modality": "body",
+    "source_image": "test_images/shrayan/body/Screenshot (47).png",
+    "augmented_image": "augmented_test_images/shrayan/body/Screenshot (47)_aug_brightness.jpg",
+    "augmentation_type": "brightness",
+    "parameters": {
+      "factor": 1.162
+    }
+  },
+  {
+    "identity": "swapnil",
+    "modality": "face",
+    "source_image": "test_images/swapnil/face/Screenshot (21).png",
+    "augmented_image": "augmented_test_images/swapnil/face/Screenshot (21)_aug_hflip.jpg",
+    "augmentation_type": "horizontal_flip",
+    "parameters": {}
+  },
+  {
+    "identity": "swapnil",
+    "modality": "face",
+    "source_image": "test_images/swapnil/face/Screenshot (21).png",
+    "augmented_image": "augmented_test_images/swapnil/face/Screenshot (21)_aug_blur.jpg",
+    "augmentation_type": "gaussian_blur",
+    "parameters": {
+      "kernel_size": 3
+    }
+  },
+  {
+    "identity": "swapnil",
+    "modality": "face",
+    "source_image": "test_images/swapnil/face/Screenshot (21).png",
+    "augmented_image": "augmented_test_images/swapnil/face/Screenshot (21)_aug_brightness.jpg",
+    "augmentation_type": "brightness",
+    "parameters": {
+      "factor": 0.911
+    }
+  },
+  {
+    "identity": "swapnil",
+    "modality": "face",
+    "source_image": "test_images/swapnil/face/Screenshot (32).png",
+    "augmented_image": "augmented_test_images/swapnil/face/Screenshot (32)_aug_jpeg.jpg",
+    "augmentation_type": "jpeg_compression",
+    "parameters": {
+      "quality": 64
+    }
+  },
+  {
+    "identity": "swapnil",
+    "modality": "face",
+    "source_image": "test_images/swapnil/face/Screenshot (32).png",
+    "augmented_image": "augmented_test_images/swapnil/face/Screenshot (32)_aug_contrast.jpg",
+    "augmentation_type": "contrast",
+    "parameters": {
+      "factor": 1.089
+    }
+  },
+  {
+    "identity": "swapnil",
+    "modality": "face",
+    "source_image": "test_images/swapnil/face/Screenshot (32).png",
+    "augmented_image": "augmented_test_images/swapnil/face/Screenshot (32)_aug_noise.jpg",
+    "augmentation_type": "gaussian_noise",
+    "parameters": {
+      "std": 9.18
+    }
+  },
+  {
+    "identity": "swapnil",
+    "modality": "face",
+    "source_image": "test_images/swapnil/face/Screenshot (33).png",
+    "augmented_image": "augmented_test_images/swapnil/face/Screenshot (33)_aug_contrast.jpg",
+    "augmentation_type": "contrast",
+    "parameters": {
+      "factor": 0.876
+    }
+  },
+  {
+    "identity": "swapnil",
+    "modality": "face",
+    "source_image": "test_images/swapnil/face/Screenshot (33).png",
+    "augmented_image": "augmented_test_images/swapnil/face/Screenshot (33)_aug_jpeg.jpg",
+    "augmentation_type": "jpeg_compression",
+    "parameters": {
+      "quality": 63
+    }
+  },
+  {
+    "identity": "swapnil",
+    "modality": "face",
+    "source_image": "test_images/swapnil/face/Screenshot (33).png",
+    "augmented_image": "augmented_test_images/swapnil/face/Screenshot (33)_aug_rotation.jpg",
+    "augmentation_type": "rotation",
+    "parameters": {
+      "angle_deg": 1.59
+    }
+  },
+  {
+    "identity": "swapnil",
+    "modality": "face",
+    "source_image": "test_images/swapnil/face/Screenshot (34).png",
+    "augmented_image": "augmented_test_images/swapnil/face/Screenshot (34)_aug_blur.jpg",
+    "augmentation_type": "gaussian_blur",
+    "parameters": {
+      "kernel_size": 5
+    }
+  },
+  {
+    "identity": "swapnil",
+    "modality": "face",
+    "source_image": "test_images/swapnil/face/Screenshot (34).png",
+    "augmented_image": "augmented_test_images/swapnil/face/Screenshot (34)_aug_jpeg.jpg",
+    "augmentation_type": "jpeg_compression",
+    "parameters": {
+      "quality": 83
+    }
+  },
+  {
+    "identity": "swapnil",
+    "modality": "face",
+    "source_image": "test_images/swapnil/face/Screenshot (34).png",
+    "augmented_image": "augmented_test_images/swapnil/face/Screenshot (34)_aug_rotation.jpg",
+    "augmentation_type": "rotation",
+    "parameters": {
+      "angle_deg": -4.46
+    }
+  }
+]

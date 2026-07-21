@@ -1,0 +1,64 @@
+{
+    "P0001": {
+        "name": "sarisht",
+        "face_folders": [
+            "test_images\\sarisht\\face",
+            "augmented_test_images\\sarisht\\face"
+        ],
+        "body_folders": [
+            "test_images\\sarisht\\body",
+            "augmented_test_images\\sarisht\\body"
+        ],
+        "face_image_count": 24,
+        "body_image_count": 16
+    },
+    "P0002": {
+        "name": "satyabrata",
+        "face_folders": [
+            "test_images\\satyabrata\\face",
+            "augmented_test_images\\satyabrata\\face"
+        ],
+        "body_folders": [
+            "test_images\\satyabrata\\body",
+            "augmented_test_images\\satyabrata\\body"
+        ],
+        "face_image_count": 20,
+        "body_image_count": 16
+    },
+    "P0003": {
+        "name": "shinjan",
+        "face_folders": [
+            "test_images\\shinjan\\face",
+            "augmented_test_images\\shinjan\\face"
+        ],
+        "body_folders": [
+            "test_images\\shinjan\\body",
+            "augmented_test_images\\shinjan\\body"
+        ],
+        "face_image_count": 8,
+        "body_image_count": 17
+    },
+    "P0004": {
+        "name": "shrayan",
+        "face_folders": [
+            "test_images\\shrayan\\face",
+            "augmented_test_images\\shrayan\\face"
+        ],
+        "body_folders": [
+            "test_images\\shrayan\\body",
+            "augmented_test_images\\shrayan\\body"
+        ],
+        "face_image_count": 24,
+        "body_image_count": 16
+    },
+    "P0005": {
+        "name": "swapnil",
+        "face_folders": [
+            "test_images\\swapnil\\face",
+            "augmented_test_images\\swapnil\\face"
+        ],
+        "body_folders": [],
+        "face_image_count": 16,
+        "body_image_count": 0
+    }
+}

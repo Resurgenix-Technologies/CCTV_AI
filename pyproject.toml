@@ -1,0 +1,27 @@
+[project]
+name = "cctv-ai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "insightface>=1.0.1",
+    "ndi-python>=6.3.2.3",
+    "numpy>=2.5.1",
+    "scikit-learn>=1.9.0",
+    "ultralytics>=8.4.103",
+    "torch",
+    "torchvision",
+    "torchreid",
+    "onnxruntime-gpu",
+]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+torchvision = { index = "pytorch-cu128" }
+torchreid = { git = "https://github.com/KaiyangZhou/deep-person-reid.git" }
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
