@@ -1,19 +1,26 @@
 .env
 .env.*
 !.env.example
+
+.venv/
+venv/
+env/
 __pycache__/
 *.py[cod]
 .pytest_cache/
-.venv/
-venv/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
 
+# Local biometric data and SQLite database
 data/enrollment/*
 !data/enrollment/.gitkeep
-
 data/*.db
 data/*.db-shm
 data/*.db-wal
@@ -24,6 +31,7 @@ data/*.sqlite3
 *.pkl
 *.pickle
 
+# Generated footage and outputs
 outputs/*
 !outputs/.gitkeep
 videos/
@@ -32,8 +40,12 @@ videos/
 *.mov
 *.mkv
 
+# Downloaded models
 models/*.onnx
 models/*.pt
 !models/.gitkeep
 
 *.log
+
+# Runtime logs
+logs/

@@ -1,6 +1,9 @@
-# Python 3.11
 numpy>=1.26.4,<3.0
 opencv-contrib-python>=4.10.0.84,<5.0
+insightface>=1.0.1,<2.0
+onnxruntime>=1.17.0,<2.0
 ultralytics>=8.3.0,<9.0
 python-dotenv>=1.0.1,<2.0
+ndi-python==6.3.2.3
 pytest>=8.3.0,<9.0
+qrcode[pil]>=7.4,<9.0
