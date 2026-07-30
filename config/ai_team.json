@@ -1,0 +1,42 @@
+[
+  {
+    "folder": "sarisht",
+    "full_name": "Sarisht Shreshth",
+    "person_type": "AI_TEAM",
+    "phone": "+910000000001",
+    "age": 25,
+    "designation": "AI Lead"
+  },
+  {
+    "folder": "satyabrata",
+    "full_name": "Satyabrata",
+    "person_type": "AI_TEAM",
+    "phone": "+910000000002",
+    "age": 24,
+    "designation": "AI Engineer"
+  },
+  {
+    "folder": "shinjan",
+    "full_name": "Shinjan",
+    "person_type": "AI_TEAM",
+    "phone": "+910000000003",
+    "age": 24,
+    "designation": "AI Engineer"
+  },
+  {
+    "folder": "shrayan",
+    "full_name": "Shrayan Sarkar",
+    "person_type": "AI_TEAM",
+    "phone": "+910000000004",
+    "age": 24,
+    "designation": "AI Engineer"
+  },
+  {
+    "folder": "swapnil",
+    "full_name": "Swapnil",
+    "person_type": "AI_TEAM",
+    "phone": "+910000000005",
+    "age": 24,
+    "designation": "AI Engineer"
+  }
+]

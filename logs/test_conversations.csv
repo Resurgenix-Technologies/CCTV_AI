@@ -1,0 +1,15 @@
+camera,person_a,person_b,start,end,duration_seconds
+ROOM,satyabrata,Unknown-CAM4-8,16:26:12,16:26:33,21.0
+ROOM,satyabrata,shrayan,16:26:34,16:26:50,16.3
+ROOM,satyabrata,shrayan,16:26:51,16:27:03,12.4
+ROOM,shrayan,Unknown-CAM4-12,16:27:01,16:27:30,28.9
+ROOM,shinjan,shinjan,16:27:29,16:27:36,6.3
+ROOM,shrayan,Unknown-CAM4-15,16:27:28,16:27:49,20.1
+ROOM,shinjan,shrayan,16:26:54,16:27:49,55.3
+ROOM,satyabrata,Unknown-CAM4-8,16:30:27,16:30:47,19.3
+ROOM,satyabrata,shrayan,16:30:47,16:31:03,15.4
+ROOM,satyabrata,shrayan,16:31:03,16:31:14,11.1
+ROOM,shrayan,Unknown-CAM4-12,16:31:12,16:31:39,26.7
+ROOM,shinjan,shinjan,16:31:38,16:31:45,6.3
+ROOM,shrayan,Unknown-CAM4-15,16:31:37,16:31:57,19.9
+ROOM,shinjan,shrayan,16:31:06,16:31:58,52.2
