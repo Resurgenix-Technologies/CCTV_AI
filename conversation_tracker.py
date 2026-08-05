@@ -27,6 +27,8 @@ def stable_identity_key(cam_name: str, track_id: int, identity_manager):
     """Returns a stable tuple key representing the confirmed person name or camera track ID."""
     progress = identity_manager.vote_progress(track_id)
     if progress.status == "CONFIRMED":
+        if progress.candidate_person_id is not None:
+            return ("NAME", progress.candidate_person_id)
         return ("NAME", progress.candidate_name)
     return ("TRACK", cam_name, track_id)
 
@@ -100,6 +102,20 @@ class ConversationTracker:
                 )
 
                 if distance >= distance_threshold:
+                    continue
+
+                # Wait for both identities to be fully resolved (confirmed
+                # AI team member, or confirmed-unknown visitor) before
+                # tracking this pair at all. stable_identity_key() switches
+                # from a temporary TRACK-based key to a permanent NAME-based
+                # key the moment a track gets confirmed, and that key is
+                # recomputed every frame -- so starting the timer before
+                # resolution risks the key changing mid-conversation and
+                # silently resetting/orphaning the proximity timer, which
+                # is why conversations were never reaching TALKING_DURATION.
+                progress1 = identity_manager.vote_progress(id1)
+                progress2 = identity_manager.vote_progress(id2)
+                if progress1.status != "CONFIRMED" or progress2.status != "CONFIRMED":
                     continue
 
                 key1 = stable_identity_key(cam_name, id1, identity_manager)

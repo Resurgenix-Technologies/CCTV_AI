@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import numpy as np
 from collections import Counter, deque
 from dataclasses import dataclass, field
 from typing import Literal
@@ -18,6 +19,7 @@ class RecognitionResult:
     person_id: str | None
     full_name: str
     similarity: float
+    embedding: np.ndarray | None = None
 
 
 @dataclass(frozen=True)
@@ -28,6 +30,7 @@ class Vote:
     full_name: str
     similarity: float
     matched: bool
+    embedding: np.ndarray | None = None
 
 
 @dataclass(frozen=True)
@@ -54,6 +57,11 @@ class TrackIdentity:
     last_face_frame: int | None = None
     last_seen_frame: int = 0
     votes: deque = field(default_factory=deque)
+    db_written: bool = False
+    first_seen_time: float = 0.0
+    confirmed_face_id: str | None = None
+    best_embedding: np.ndarray | None = None
+    total_observations: int = 0
 
 
 class IdentityManager:
@@ -92,10 +100,12 @@ class IdentityManager:
         track_id: int,
         frame_index: int = 0,
     ) -> TrackIdentity:
+        import time
         return TrackIdentity(
             track_id=track_id,
             last_seen_frame=frame_index,
             votes=deque(maxlen=self.vote_window),
+            first_seen_time=time.time(),
         )
 
     def mark_seen(
@@ -160,9 +170,16 @@ class IdentityManager:
             ),
             similarity=result.similarity,
             matched=result.matched,
+            embedding=result.embedding,
         )
         state.votes.append(vote)
         state.similarity = result.similarity
+        state.total_observations += 1
+        
+        # Track the best embedding seen so far for DB insertion
+        if result.embedding is not None:
+            if state.best_embedding is None or result.similarity > state.similarity:
+                state.best_embedding = result.embedding
 
         known_votes = [
             item

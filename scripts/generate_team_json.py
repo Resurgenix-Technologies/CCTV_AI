@@ -10,7 +10,7 @@ Examples:
   python scripts/generate_team_json.py --add --name "John Doe" --folder "johndoe" --phone "+919999999999" --age 25 --designation "AI Engineer"
 
   # Precompute embeddings into JSON file for pure DB enrollment:
-  python scripts/generate_team_json.py --precompute --output config/ai_team_standalone.json
+  python scripts/generate_team_json.py --scan --precompute --output config/ai_team.json
 """
 
 from __future__ import annotations
@@ -19,6 +19,7 @@ import argparse
 import json
 import logging
 import sys
+import random
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -121,19 +122,63 @@ def scan_test_images(settings: Settings, data: list[dict]) -> list[dict]:
     existing_folders = {item.get("folder") for item in data if "folder" in item}
     counter = len(data) + 1
 
+    # Realistic roles for the AI team
+    designations = [
+        "AI Lead",
+        "Computer Vision Lead",
+        "Backend Lead",
+        "Frontend Lead",
+        "Machine Learning Engineer",
+        "AI Engineer",
+        "Backend Developer",
+        "Frontend Developer",
+        "Computer Vision Engineer",
+        "Research Engineer",
+        "Machine Learning Intern",
+        "Computer Vision Intern",
+        "Backend Intern",
+        "Frontend Intern",
+        "Research Intern",
+        "Software Engineer",
+        "Full Stack Developer",
+        "DevOps Engineer",
+        "Project Coordinator",
+        "Technical Lead",
+    ]
+
+    # Randomize assignment so everyone doesn't get the same role
+    random.shuffle(designations)
+    designation_index = 0
+
     for child in sorted(test_images_dir.iterdir()):
         if child.is_dir() and child.name not in existing_folders:
-            default_name = child.name.capitalize()
+            default_name = child.name.replace("_", " ").title()
             default_phone = f"+91000000000{counter}"
-            data.append({
-                "folder": child.name,
-                "full_name": default_name,
-                "person_type": "AI_TEAM",
-                "phone": default_phone,
-                "age": 25,
-                "designation": "AI Engineer",
-            })
-            LOGGER.info("Discovered folder '%s' -> Added entry for %s (%s)", child.name, default_name, default_phone)
+
+            designation = designations[
+                designation_index % len(designations)
+            ]
+            designation_index += 1
+
+            data.append(
+                {
+                    "folder": child.name,
+                    "full_name": default_name,
+                    "person_type": "AI_TEAM",
+                    "phone": default_phone,
+                    "age": random.randint(20, 30),
+                    "designation": designation,
+                }
+            )
+
+            LOGGER.info(
+                "Discovered folder '%s' -> Added %s (%s) [%s]",
+                child.name,
+                default_name,
+                default_phone,
+                designation,
+            )
+
             counter += 1
 
     return data

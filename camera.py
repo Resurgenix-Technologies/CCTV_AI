@@ -45,6 +45,7 @@ from face_pipeline import (
     DEBUG_RECOGNITION,
 )
 from conversation_tracker import ConversationTracker
+import db_integration
 
 # ==================== Models & Face Engines Setup ====================
 
@@ -237,6 +238,7 @@ def process_camera(cam_name: str, frame: np.ndarray) -> np.ndarray:
                                 person_id=matched_name if matched_name != "Unknown" else None,
                                 full_name=matched_name,
                                 similarity=score,
+                                embedding=fused_embedding,
                             )
                             identity_manager.observe(track_id, recognition_result, frame_index)
 
@@ -263,6 +265,49 @@ def process_camera(cam_name: str, frame: np.ndarray) -> np.ndarray:
                                 print(f"[{cam_name}] ID:{track_id} ReID match={reid_name} sim={reid_sim:.3f}")
 
                 if track_id != -1:
+                    # Database write logic with stabilization buffer
+                    state = identity_manager.get(track_id)
+                    buffer_elapsed = (
+                        (time.time() - state.first_seen_time)
+                        >= db_integration.RECOGNITION_BUFFER_SECONDS
+                    )
+                    # A track has had a fair chance to be recognized only
+                    # once its rolling vote window is actually full. At low
+                    # FPS, wall-clock buffer time alone can expire after a
+                    # single processed frame, which would misclassify a
+                    # real AI team member as an unknown visitor just
+                    # because recognition never got enough attempts.
+                    votes_exhausted = (
+                        state.total_observations >= identity_manager.vote_window
+                    )
+
+                    if state.confirmed and not state.db_written:
+                        if buffer_elapsed:
+                            if state.person_id:
+                                db_integration.add_track_id_to_ai_team(state.full_name, cam_name, track_id)
+                            else:
+                                face_id = db_integration.handle_unknown_visitor(cam_name, track_id, state.best_embedding)
+                                state.person_id = face_id
+                            state.db_written = True
+                    elif (
+                        not state.confirmed
+                        and not state.db_written
+                        and buffer_elapsed
+                        and votes_exhausted
+                        and state.best_embedding is not None
+                    ):
+                        # Buffer window passed AND the vote window was
+                        # actually filled with real recognition attempts
+                        # without confirming a match -- it's a genuinely
+                        # new, unknown person. Write them to visitors now
+                        # instead of leaving them stuck as an unresolved
+                        # track forever.
+                        face_id = db_integration.handle_unknown_visitor(cam_name, track_id, state.best_embedding)
+                        state.person_id = face_id
+                        state.full_name = face_id
+                        state.confirmed = True
+                        state.db_written = True
+
                     is_stationary = conversation_tracker.update_movement_and_check_stationary(
                         cam_name, track_id, center_x, center_y
                     )

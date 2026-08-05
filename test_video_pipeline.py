@@ -34,6 +34,7 @@ from face_pipeline import (
     DEBUG_RECOGNITION,
 )
 from conversation_tracker import ConversationTracker
+import db_integration
 
 
 def process_video_file(
@@ -197,6 +198,7 @@ def process_video_file(
                                     person_id=matched_name if matched_name != "Unknown" else None,
                                     full_name=matched_name,
                                     similarity=score,
+                                    embedding=fused_embedding,
                                 )
                                 identity_manager.observe(track_id, recognition_result, frame_index)
 
@@ -217,6 +219,33 @@ def process_video_file(
                                     similarity=reid_sim,
                                 )
                                 identity_manager.observe(track_id, reid_result, frame_index)
+
+                    if track_id != -1:
+                        state_obj = identity_manager.get(track_id)
+                        buffer_elapsed = (
+                            (time.time() - state_obj.first_seen_time)
+                            >= db_integration.RECOGNITION_BUFFER_SECONDS
+                        )
+
+                        if state_obj.confirmed and not state_obj.db_written:
+                            if buffer_elapsed:
+                                if state_obj.person_id:
+                                    db_integration.add_track_id_to_ai_team(state_obj.full_name, cam_name, track_id)
+                                else:
+                                    face_id = db_integration.handle_unknown_visitor(cam_name, track_id, state_obj.best_embedding)
+                                    state_obj.person_id = face_id
+                                state_obj.db_written = True
+                        elif (
+                            not state_obj.confirmed
+                            and not state_obj.db_written
+                            and buffer_elapsed
+                            and state_obj.best_embedding is not None
+                        ):
+                            face_id = db_integration.handle_unknown_visitor(cam_name, track_id, state_obj.best_embedding)
+                            state_obj.person_id = face_id
+                            state_obj.full_name = face_id
+                            state_obj.confirmed = True
+                            state_obj.db_written = True
 
                     if track_id != -1:
                         is_stationary = conversation_tracker.update_movement_and_check_stationary(
@@ -347,6 +376,6 @@ def process_video_file(
 
 
 if __name__ == "__main__":
-    input_path = BASE_DIR / "2026-07-20 15-33-20.mp4"
+    input_path = BASE_DIR / "Cropped version.mp4"
     output_path = BASE_DIR / "output.mp4"
     process_video_file(input_path, output_path)

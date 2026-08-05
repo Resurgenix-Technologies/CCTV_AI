@@ -69,22 +69,53 @@ class ConversationLogger:
             start_time=start_time,
             end_time=end_time,
         )
+        
+        import uuid
+        def is_visitor(val):
+            try:
+                uuid.UUID(str(val))
+                return True
+            except ValueError:
+                return False
+
+        a_vis = is_visitor(person_a)
+        b_vis = is_visitor(person_b)
+
+        # Skip pending/unconfirmed tracks -- neither side has an identity yet.
+        if "Unknown-" in person_a or "Unknown-" in person_b:
+            return entry
+
+        # Skip AI <-> AI only. AI <-> Visitor and Visitor <-> Visitor both
+        # get logged (both are wanted; only two confirmed AI team members
+        # talking to each other is out of scope here).
+        if not a_vis and not b_vis:
+            return entry
 
         with self._lock:
             self._entries.append(entry)
+            
             if self._csv_path is not None:
+                import csv
                 with self._csv_path.open("a", newline="", encoding="utf-8") as fh:
                     writer = csv.writer(fh)
-                    writer.writerow(
-                        [
-                            entry.camera,
-                            entry.person_a,
-                            entry.person_b,
-                            entry.start_clock,
-                            entry.end_clock,
-                            f"{entry.duration_seconds:.1f}",
-                        ]
-                    )
+                    writer.writerow([
+                        entry.camera,
+                        entry.person_a,
+                        entry.person_b,
+                        entry.start_clock,
+                        entry.end_clock,
+                        f"{entry.duration_seconds:.1f}",
+                    ])
+            
+            # Database integration
+            import db_integration
+            db_integration.insert_visitor_log(
+                person_a_name_or_id=entry.person_a,
+                person_b_name_or_id=entry.person_b,
+                start_time=entry.start_time,
+                end_time=entry.end_time,
+                comments=f"Camera: {entry.camera}"
+            )
 
         return entry
 
